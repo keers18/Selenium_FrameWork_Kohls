@@ -1,0 +1,14 @@
+#ENVIRONMENT VARIABLE CONFIG FILE
+browser=chrome   
+
+ChromeDriver=D:\\MobileAppTesting\\script\\TestLab\\driver\\chromedriver.exe
+
+IEDriver=D:\\MobileAppTesting\\script\\TestLab\\driver\\IEDriverServer.exe
+
+url=http://www.flipkart.com
+
+implicit_wait_time=30
+
+ReportPath=D:\\MobileAppTesting\\script\\TestLabPro\\reports\\
+
+ScreenShots=D:\\MobileAppTesting\\script\\TestLabPro\\screenshots\\

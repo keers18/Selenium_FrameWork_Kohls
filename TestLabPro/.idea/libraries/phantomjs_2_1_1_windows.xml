@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="phantomjs-2.1.1-windows">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/drivers/phantomjs-2.1.1-windows.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

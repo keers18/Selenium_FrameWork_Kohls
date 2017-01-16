@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [TestLabPro TestSuite]">
+  <test name="testone(failed)">
+    <groups>
+      <run>
+        <include name="Dev"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.framework.testCases.TestCases">
+        <methods>
+          <include name="teardown"/>
+          <include name="TC002_fassured_validation"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.framework.testCases.TestCases -->
+    </classes>
+  </test> <!-- testone(failed) -->
+</suite> <!-- Failed suite [TestLabPro TestSuite] -->
