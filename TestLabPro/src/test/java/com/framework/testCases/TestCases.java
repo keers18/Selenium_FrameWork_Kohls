@@ -4,9 +4,10 @@ import com.framework.annotations.annotationFactory.Author;
 import com.framework.annotations.annotationFactory.TC_NO;
 import com.framework.pageFactory.TestBase;
 import com.framework.reusable.components;
-//import com.framework.utilities.reportUtil;
+import com.framework.utilities.reporter;
 
 public class TestCases extends TestBase {
+//PRETEST CONFIGURATIONS
 components component=new components();
  
 
@@ -23,10 +24,10 @@ public void TC001_login_validation() throws Exception{
 @TC_NO("002")
 @Test(groups= {"Dev"})
 public void TC002_fassured_validation() throws Exception{
-	//reportUtil.initReport("TC002_Fassured_Functionality_Validation", "Flipkart:F-assured Functionality");
+	reporter.initReport("TC002", "Flipkart:F-assured Functionality");
 	component.openURL();
 	component.clickFAssured();
-	//reportUtil.tearReport();
+	reporter.tearReport();
 	
 }
 @TC_NO("003")

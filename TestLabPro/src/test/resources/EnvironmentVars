@@ -9,6 +9,6 @@ url=http://www.flipkart.com
 
 implicit_wait_time=30
 
-ReportPath=D:\\MobileAppTesting\\script\\TestLabPro\\reports\\
+ReportPath=C:\\Users\\kanha\\git\\TestLabPro\\TestLabPro\\reports\\
 
 ScreenShots=D:\\MobileAppTesting\\script\\TestLabPro\\screenshots\\

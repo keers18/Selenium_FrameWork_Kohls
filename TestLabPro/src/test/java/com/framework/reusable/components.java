@@ -5,7 +5,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.framework.pageFactory.Home;
 import com.framework.pageFactory.TestBase;
 
-public class components extends TestBase {
+ public  class components extends TestBase {
 	//PAGE OBJECT DECLARTIONS. . .
 	static Home oHome=PageFactory.initElements(driver, Home.class);
 

@@ -17,24 +17,17 @@ public class driverUtil extends TestBase{
 		driver.manage().deleteAllCookies();
 		driver.get(tcdf.globalValue("url"));
 		driver.manage().timeouts().implicitlyWait(Long.valueOf(tcdf.globalValue("implicit_wait_time")), TimeUnit.SECONDS);}
-		
-		catch(Exception e){
-			e.printStackTrace();
-		}
-
-	}
+					catch(Exception e){
+						e.printStackTrace();}}
 
 	public static void click(By locator) throws Exception{
 		try{
 			driver.findElement(locator).click();
 			//System.out.println("clicked:"+locator.toString());
-		
-		}catch(Exception e){
-			//System.out.println("clickable element"+locator.toString()+" not found");
-			//e.printStackTrace();
-			
-
-		}
+			}catch(Exception e){
+			//System.out.println(" element"+locator.toString()+"is not clickable");
+			e.printStackTrace();
+				}
 	}
 	public static void waitForElementDisplayed(By locator,int waitTime) throws Exception{
 		try{
@@ -42,38 +35,26 @@ public class driverUtil extends TestBase{
 			WebDriverWait wait = new WebDriverWait(driver, waitTime);
 			wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
 			System.out.println("element:"+locator.toString()+" is visible");}
-		catch(Exception e){
-			e.printStackTrace();
-		}
-	}
+			catch(Exception e){
+			e.printStackTrace();}}
 	public static void sendKeys(By locator,String data) throws Exception{
 		try{
 			driver.findElement(locator).sendKeys(data);
 			System.out.println("sent "+data+" to"+locator.toString());
-		}
-		catch(Exception e){
-			e.printStackTrace();
-		}
-	}
+		}catch(Exception e){
+			e.printStackTrace();}}
 	public static void clear(By locator) throws Exception{
 		try{
 			driver.findElement(locator).clear();
 			System.out.println("cleared the text of the locator:"+locator.toString());
 		}catch(Exception e){
-			e.printStackTrace();
-		}
-	}
+			e.printStackTrace();}}
 	public static String getText(By locator) throws Exception{
 		String Text="";
 		try{
 			Text=driver.findElement(locator).getText().trim();
-
-
 		}catch(Exception e){
-			e.printStackTrace();
-		}
-		return Text;
-	}
+			e.printStackTrace();}return Text;}
 	public static String getAttribute(By locator,String attribute) throws Exception{
 		String attributeVal="";
 		try{
