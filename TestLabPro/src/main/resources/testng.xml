@@ -3,9 +3,9 @@
 <suite name="TestLabPro TestSuite" parallel="false">
 	<test name="testone">
 		<groups>
-		<run>
-		<include name="Dev"></include>
-		</run>
+			<run>
+				<include name="Dev"></include>
+			</run>
 		</groups>
 		<classes>
 			<class name="com.framework.testCases.TestCases" />

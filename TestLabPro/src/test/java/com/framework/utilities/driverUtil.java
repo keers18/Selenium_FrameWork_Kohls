@@ -23,19 +23,20 @@ public class driverUtil extends TestBase{
 	public static void click(By locator) throws Exception{
 		try{
 			driver.findElement(locator).click();
-			//System.out.println("clicked:"+locator.toString());
+			Log.info("clicked:"+locator.toString());
 			}catch(Exception e){
-			//System.out.println(" element"+locator.toString()+"is not clickable");
+			Log.error("clicked:"+locator.toString(),e);
 			e.printStackTrace();
 				}
 	}
 	public static void waitForElementDisplayed(By locator,int waitTime) throws Exception{
 		try{
-			System.out.println("waiting for element:"+locator.toString());
+			Log.info("waiting for:"+locator.toString());
 			WebDriverWait wait = new WebDriverWait(driver, waitTime);
 			wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
-			System.out.println("element:"+locator.toString()+" is visible");}
+			Log.info(locator.toString()+" is visible");}
 			catch(Exception e){
+			Log.error(locator.toString()+" not visible");	
 			e.printStackTrace();}}
 	public static void sendKeys(By locator,String data) throws Exception{
 		try{
