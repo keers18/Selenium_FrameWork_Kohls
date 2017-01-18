@@ -20,11 +20,10 @@ public void TC001_login_validation() throws Exception{
 	component.clickLogin();
 	
 }
-
 @TC_NO("002")
 @Test(groups= {"Dev"})
 public void TC002_fassured_validation() throws Exception{
-	reporter.initReport("TC002", "Flipkart:F-assured Functionality");
+	reporter.initReport("TC002", "Flipkart:F-assured Functionality","Shruti");
 	component.openURL();
 	component.clickFAssured();
 	reporter.tearReport();
@@ -38,5 +37,5 @@ public void TC003_checkGiftCardFunctionality() throws Exception{
 	Thread.sleep(5000);
 }
 
-
+//xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 }

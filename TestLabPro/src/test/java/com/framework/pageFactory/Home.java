@@ -28,7 +28,7 @@ public void clickFAssured() throws Exception{
 	driverUtil.waitForElementDisplayed(lnkFAssured, 120);
 	driverUtil.click(lnkFAssured);
 	//WE CAN ADD TRADITIONAL VERIFICATION STEPS 
-	reporter.reportTestStep("Click F-assured-HomePage Link", "ok", "ok", "PASS", false);}
+	reporter.reportTestStep("Click F-assured-HomePage Link", "ok", "notok", "FAIL", false);}
 
 public void clickLogin() throws Exception{
 	driverUtil.waitForElementDisplayed(lnkLogin, 120);
