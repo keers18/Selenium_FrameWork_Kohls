@@ -9,7 +9,6 @@
 		</groups>
 		<classes>
 			<class name="com.framework.testCases.TestCases" />
-			
 		</classes>
 	</test>
 </suite> 

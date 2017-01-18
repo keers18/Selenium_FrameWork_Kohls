@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/0/3</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Jan 11 21:39:17 IST 2017</td>
+<td>Started on:</td><td>Wed Jan 18 20:27:17 IST 2017</td>
 </tr>
-<tr><td>Total time:</td><td>15 seconds (15210 ms)</td>
+<tr><td>Total time:</td><td>15 seconds (15139 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,22 +76,13 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.framework.testCases.TestCases.setup()'><b>setup</b><br>Test class: com.framework.testCases.TestCases</td>
-<td><div><pre>java.lang.NoClassDefFoundError: org/openqa/selenium/remote/service/DriverService$Builder
-	at java.lang.ClassLoader.defineClass1(Native Method)
-	at java.lang.ClassLoader.defineClass(Unknown Source)
-	at java.security.SecureClassLoader.defineClass(Unknown Source)
-	at java.net.URLClassLoader.defineClass(Unknown Source)
-	at java.net.URLClassLoader.access$100(Unknown Source)
-	at java.net.URLClassLoader$1.run(Unknown Source)
-	at java.net.URLClassLoader$1.run(Unknown Source)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.net.URLClassLoader.findClass(Unknown Source)
-	at java.lang.ClassLoader.loadClass(Unknown Source)
-	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
-	at java.lang.ClassLoader.loadClass(Unknown Source)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:152)
-	at com.framework.pageFactory.TestBase.setup(TestBase.java:33)
+<td><div><pre>java.io.FileNotFoundException: D:\MobileAppTesting\script\TestLabPro\src\test\resources\EnvironmentVars (The system cannot find the path specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.&lt;init&gt;(Unknown Source)
+	at java.io.FileInputStream.&lt;init&gt;(Unknown Source)
+	at com.framework.utilities.tcdf.globalValue(tcdf.java:13)
+	at com.framework.pageFactory.TestBase.setup(TestBase.java:23)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -118,29 +109,14 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.remote.service.DriverService$Builder
-	at java.net.URLClassLoader.findClass(Unknown Source)
-	at java.lang.ClassLoader.loadClass(Unknown Source)
-	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
-	at java.lang.ClassLoader.loadClass(Unknown Source)
-	... 41 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace842326585", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace842326585'><pre>java.lang.NoClassDefFoundError: org/openqa/selenium/remote/service/DriverService$Builder
-	at java.lang.ClassLoader.defineClass1(Native Method)
-	at java.lang.ClassLoader.defineClass(Unknown Source)
-	at java.security.SecureClassLoader.defineClass(Unknown Source)
-	at java.net.URLClassLoader.defineClass(Unknown Source)
-	at java.net.URLClassLoader.access$100(Unknown Source)
-	at java.net.URLClassLoader$1.run(Unknown Source)
-	at java.net.URLClassLoader$1.run(Unknown Source)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.net.URLClassLoader.findClass(Unknown Source)
-	at java.lang.ClassLoader.loadClass(Unknown Source)
-	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
-	at java.lang.ClassLoader.loadClass(Unknown Source)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:152)
-	at com.framework.pageFactory.TestBase.setup(TestBase.java:33)
+</pre></div><a href='#' onClick='toggleBox("stack-trace727001376", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace727001376'><pre>java.io.FileNotFoundException: D:\MobileAppTesting\script\TestLabPro\src\test\resources\EnvironmentVars (The system cannot find the path specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.&lt;init&gt;(Unknown Source)
+	at java.io.FileInputStream.&lt;init&gt;(Unknown Source)
+	at com.framework.utilities.tcdf.globalValue(tcdf.java:13)
+	at com.framework.pageFactory.TestBase.setup(TestBase.java:23)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -167,15 +143,9 @@ Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.remote.service.
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.remote.service.DriverService$Builder
-	at java.net.URLClassLoader.findClass(Unknown Source)
-	at java.lang.ClassLoader.loadClass(Unknown Source)
-	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
-	at java.lang.ClassLoader.loadClass(Unknown Source)
-	... 41 more
 </pre></div></td>
 <td>0</td>
-<td>com.framework.testCases.TestCases@56ac3a89</td></tr>
+<td>com.framework.testCases.TestCases@5f2108b5</td></tr>
 <tr>
 <td title='com.framework.testCases.TestCases.teardown()'><b>teardown</b><br>Test class: com.framework.testCases.TestCases</td>
 <td><div><pre>java.lang.NullPointerException
@@ -206,8 +176,8 @@ Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.remote.service.
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1484594489", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1484594489'><pre>java.lang.NullPointerException
+</pre></div><a href='#' onClick='toggleBox("stack-trace1468303011", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1468303011'><pre>java.lang.NullPointerException
 	at com.framework.pageFactory.TestBase.teardown(TestBase.java:64)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -237,7 +207,7 @@ Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.remote.service.
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
 </pre></div></td>
 <td>0</td>
-<td>com.framework.testCases.TestCases@56ac3a89</td></tr>
+<td>com.framework.testCases.TestCases@5f2108b5</td></tr>
 <tr>
 <td title='com.framework.testCases.TestCases.teardown()'><b>teardown</b><br>Test class: com.framework.testCases.TestCases</td>
 <td><div><pre>java.lang.NullPointerException
@@ -268,8 +238,8 @@ Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.remote.service.
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1805013491", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1805013491'><pre>java.lang.NullPointerException
+</pre></div><a href='#' onClick='toggleBox("stack-trace1857815974", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1857815974'><pre>java.lang.NullPointerException
 	at com.framework.pageFactory.TestBase.teardown(TestBase.java:64)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -299,7 +269,7 @@ Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.remote.service.
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
 </pre></div></td>
 <td>0</td>
-<td>com.framework.testCases.TestCases@56ac3a89</td></tr>
+<td>com.framework.testCases.TestCases@5f2108b5</td></tr>
 <tr>
 <td title='com.framework.testCases.TestCases.teardown()'><b>teardown</b><br>Test class: com.framework.testCases.TestCases</td>
 <td><div><pre>java.lang.NullPointerException
@@ -330,8 +300,8 @@ Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.remote.service.
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2056418216", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2056418216'><pre>java.lang.NullPointerException
+</pre></div><a href='#' onClick='toggleBox("stack-trace846238611", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace846238611'><pre>java.lang.NullPointerException
 	at com.framework.pageFactory.TestBase.teardown(TestBase.java:64)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -361,7 +331,7 @@ Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.remote.service.
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
 </pre></div></td>
 <td>0</td>
-<td>com.framework.testCases.TestCases@56ac3a89</td></tr>
+<td>com.framework.testCases.TestCases@5f2108b5</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
@@ -374,12 +344,12 @@ Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.remote.service.
 <td title='com.framework.testCases.TestCases.setup()'><b>setup</b><br>Test class: com.framework.testCases.TestCases</td>
 <td></td>
 <td>0</td>
-<td>com.framework.testCases.TestCases@56ac3a89</td></tr>
+<td>com.framework.testCases.TestCases@5f2108b5</td></tr>
 <tr>
 <td title='com.framework.testCases.TestCases.setup()'><b>setup</b><br>Test class: com.framework.testCases.TestCases</td>
 <td></td>
 <td>0</td>
-<td>com.framework.testCases.TestCases@56ac3a89</td></tr>
+<td>com.framework.testCases.TestCases@5f2108b5</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -392,17 +362,17 @@ Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.remote.service.
 <td title='com.framework.testCases.TestCases.TC001_login_validation()'><b>TC001_login_validation</b><br>Test class: com.framework.testCases.TestCases</td>
 <td></td>
 <td>0</td>
-<td>com.framework.testCases.TestCases@56ac3a89</td></tr>
+<td>com.framework.testCases.TestCases@5f2108b5</td></tr>
 <tr>
 <td title='com.framework.testCases.TestCases.TC002_fassured_validation()'><b>TC002_fassured_validation</b><br>Test class: com.framework.testCases.TestCases</td>
 <td></td>
 <td>0</td>
-<td>com.framework.testCases.TestCases@56ac3a89</td></tr>
+<td>com.framework.testCases.TestCases@5f2108b5</td></tr>
 <tr>
 <td title='com.framework.testCases.TestCases.TC003_checkGiftCardFunctionality()'><b>TC003_checkGiftCardFunctionality</b><br>Test class: com.framework.testCases.TestCases</td>
 <td></td>
 <td>0</td>
-<td>com.framework.testCases.TestCases@56ac3a89</td></tr>
+<td>com.framework.testCases.TestCases@5f2108b5</td></tr>
 </table><p>
 </body>
 </html>

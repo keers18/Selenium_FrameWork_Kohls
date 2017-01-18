@@ -2,40 +2,31 @@
 <testng-results skipped="3" failed="0" total="3" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="15210" started-at="2017-01-11T16:09:17Z" finished-at="2017-01-11T16:09:33Z">
+  <suite name="Default suite" duration-ms="15139" started-at="2017-01-18T14:57:17Z" finished-at="2017-01-18T14:57:33Z">
     <groups>
       <group name="">
-        <method signature="TestCases.TC001_login_validation()[pri:0, instance:com.framework.testCases.TestCases@56ac3a89]" name="TC001_login_validation" class="com.framework.testCases.TestCases"/>
-        <method signature="TestCases.TC003_checkGiftCardFunctionality()[pri:0, instance:com.framework.testCases.TestCases@56ac3a89]" name="TC003_checkGiftCardFunctionality" class="com.framework.testCases.TestCases"/>
+        <method signature="TestCases.TC001_login_validation()[pri:0, instance:com.framework.testCases.TestCases@5f2108b5]" name="TC001_login_validation" class="com.framework.testCases.TestCases"/>
+        <method signature="TestCases.TC003_checkGiftCardFunctionality()[pri:0, instance:com.framework.testCases.TestCases@5f2108b5]" name="TC003_checkGiftCardFunctionality" class="com.framework.testCases.TestCases"/>
       </group> <!--  -->
       <group name="Dev">
-        <method signature="TestCases.TC002_fassured_validation()[pri:0, instance:com.framework.testCases.TestCases@56ac3a89]" name="TC002_fassured_validation" class="com.framework.testCases.TestCases"/>
+        <method signature="TestCases.TC002_fassured_validation()[pri:0, instance:com.framework.testCases.TestCases@5f2108b5]" name="TC002_fassured_validation" class="com.framework.testCases.TestCases"/>
       </group> <!-- Dev -->
     </groups>
-    <test name="Default test" duration-ms="15210" started-at="2017-01-11T16:09:17Z" finished-at="2017-01-11T16:09:33Z">
+    <test name="Default test" duration-ms="15139" started-at="2017-01-18T14:57:17Z" finished-at="2017-01-18T14:57:33Z">
       <class name="com.framework.testCases.TestCases">
-        <test-method status="FAIL" signature="setup()[pri:0, instance:com.framework.testCases.TestCases@56ac3a89]" name="setup" is-config="true" duration-ms="0" started-at="2017-01-11T21:39:17Z" finished-at="2017-01-11T21:39:17Z">
-          <exception class="java.lang.NoClassDefFoundError">
+        <test-method status="FAIL" signature="setup()[pri:0, instance:com.framework.testCases.TestCases@5f2108b5]" name="setup" is-config="true" duration-ms="0" started-at="2017-01-18T20:27:17Z" finished-at="2017-01-18T20:27:17Z">
+          <exception class="java.io.FileNotFoundException">
             <message>
-              <![CDATA[org/openqa/selenium/remote/service/DriverService$Builder]]>
+              <![CDATA[D:\MobileAppTesting\script\TestLabPro\src\test\resources\EnvironmentVars (The system cannot find the path specified)]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NoClassDefFoundError: org/openqa/selenium/remote/service/DriverService$Builder
-	at java.lang.ClassLoader.defineClass1(Native Method)
-	at java.lang.ClassLoader.defineClass(Unknown Source)
-	at java.security.SecureClassLoader.defineClass(Unknown Source)
-	at java.net.URLClassLoader.defineClass(Unknown Source)
-	at java.net.URLClassLoader.access$100(Unknown Source)
-	at java.net.URLClassLoader$1.run(Unknown Source)
-	at java.net.URLClassLoader$1.run(Unknown Source)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.net.URLClassLoader.findClass(Unknown Source)
-	at java.lang.ClassLoader.loadClass(Unknown Source)
-	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
-	at java.lang.ClassLoader.loadClass(Unknown Source)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:152)
-	at com.framework.pageFactory.TestBase.setup(TestBase.java:33)
+              <![CDATA[java.io.FileNotFoundException: D:\MobileAppTesting\script\TestLabPro\src\test\resources\EnvironmentVars (The system cannot find the path specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at com.framework.utilities.tcdf.globalValue(tcdf.java:13)
+	at com.framework.pageFactory.TestBase.setup(TestBase.java:23)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -62,23 +53,17 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.remote.service.DriverService$Builder
-	at java.net.URLClassLoader.findClass(Unknown Source)
-	at java.lang.ClassLoader.loadClass(Unknown Source)
-	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
-	at java.lang.ClassLoader.loadClass(Unknown Source)
-	... 41 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NoClassDefFoundError -->
+          </exception> <!-- java.io.FileNotFoundException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="TC001_login_validation()[pri:0, instance:com.framework.testCases.TestCases@56ac3a89]" name="TC001_login_validation" duration-ms="2" started-at="2017-01-11T21:39:18Z" finished-at="2017-01-11T21:39:18Z">
+        <test-method status="SKIP" signature="TC001_login_validation()[pri:0, instance:com.framework.testCases.TestCases@5f2108b5]" name="TC001_login_validation" duration-ms="7" started-at="2017-01-18T20:27:18Z" finished-at="2017-01-18T20:27:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC001_login_validation -->
-        <test-method status="FAIL" signature="teardown()[pri:0, instance:com.framework.testCases.TestCases@56ac3a89]" name="teardown" is-config="true" duration-ms="0" started-at="2017-01-11T21:39:18Z" finished-at="2017-01-11T21:39:18Z">
+        <test-method status="FAIL" signature="teardown()[pri:0, instance:com.framework.testCases.TestCases@5f2108b5]" name="teardown" is-config="true" duration-ms="0" started-at="2017-01-18T20:27:18Z" finished-at="2017-01-18T20:27:18Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -115,15 +100,15 @@ Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.remote.service.
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="SKIP" signature="setup()[pri:0, instance:com.framework.testCases.TestCases@56ac3a89]" name="setup" is-config="true" duration-ms="0" started-at="2017-01-11T21:39:23Z" finished-at="2017-01-11T21:39:23Z">
+        <test-method status="SKIP" signature="setup()[pri:0, instance:com.framework.testCases.TestCases@5f2108b5]" name="setup" is-config="true" duration-ms="0" started-at="2017-01-18T20:27:23Z" finished-at="2017-01-18T20:27:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="TC002_fassured_validation()[pri:0, instance:com.framework.testCases.TestCases@56ac3a89]" name="TC002_fassured_validation" duration-ms="3" started-at="2017-01-11T21:39:23Z" finished-at="2017-01-11T21:39:23Z">
+        <test-method status="SKIP" signature="TC002_fassured_validation()[pri:0, instance:com.framework.testCases.TestCases@5f2108b5]" name="TC002_fassured_validation" duration-ms="3" started-at="2017-01-18T20:27:23Z" finished-at="2017-01-18T20:27:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC002_fassured_validation -->
-        <test-method status="FAIL" signature="teardown()[pri:0, instance:com.framework.testCases.TestCases@56ac3a89]" name="teardown" is-config="true" duration-ms="0" started-at="2017-01-11T21:39:23Z" finished-at="2017-01-11T21:39:23Z">
+        <test-method status="FAIL" signature="teardown()[pri:0, instance:com.framework.testCases.TestCases@5f2108b5]" name="teardown" is-config="true" duration-ms="0" started-at="2017-01-18T20:27:23Z" finished-at="2017-01-18T20:27:23Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -160,15 +145,15 @@ Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.remote.service.
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="SKIP" signature="setup()[pri:0, instance:com.framework.testCases.TestCases@56ac3a89]" name="setup" is-config="true" duration-ms="0" started-at="2017-01-11T21:39:28Z" finished-at="2017-01-11T21:39:28Z">
+        <test-method status="SKIP" signature="setup()[pri:0, instance:com.framework.testCases.TestCases@5f2108b5]" name="setup" is-config="true" duration-ms="0" started-at="2017-01-18T20:27:28Z" finished-at="2017-01-18T20:27:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="TC003_checkGiftCardFunctionality()[pri:0, instance:com.framework.testCases.TestCases@56ac3a89]" name="TC003_checkGiftCardFunctionality" duration-ms="3" started-at="2017-01-11T21:39:28Z" finished-at="2017-01-11T21:39:28Z">
+        <test-method status="SKIP" signature="TC003_checkGiftCardFunctionality()[pri:0, instance:com.framework.testCases.TestCases@5f2108b5]" name="TC003_checkGiftCardFunctionality" duration-ms="2" started-at="2017-01-18T20:27:28Z" finished-at="2017-01-18T20:27:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC003_checkGiftCardFunctionality -->
-        <test-method status="FAIL" signature="teardown()[pri:0, instance:com.framework.testCases.TestCases@56ac3a89]" name="teardown" is-config="true" duration-ms="0" started-at="2017-01-11T21:39:28Z" finished-at="2017-01-11T21:39:28Z">
+        <test-method status="FAIL" signature="teardown()[pri:0, instance:com.framework.testCases.TestCases@5f2108b5]" name="teardown" is-config="true" duration-ms="0" started-at="2017-01-18T20:27:28Z" finished-at="2017-01-18T20:27:28Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
