@@ -47,9 +47,11 @@ public class driverUtil extends TestBase{
 	public static void clear(By locator) throws Exception{
 		try{
 			driver.findElement(locator).clear();
-			System.out.println("cleared the text of the locator:"+locator.toString());
+			Log.info("cleared the text of the locator:"+locator.toString());
 		}catch(Exception e){
-			e.printStackTrace();}}
+			e.printStackTrace();
+			Log.error("element:"+locator.toString()+" cannot be cleared",e);
+		}}
 	public static String getText(By locator) throws Exception{
 		String Text="";
 		try{
@@ -81,7 +83,7 @@ public class driverUtil extends TestBase{
 			Select comboSelect =new Select(driver.findElement(comboboxLocator));
 			comboSelect.selectByVisibleText(visibleValue);
 		}catch(Exception e){
-			
+			e.printStackTrace();
 		}
 		
 	}

@@ -14,7 +14,7 @@ public class TestBase {
 	protected static WebDriver driver;
     protected static Logger Log = Logger.getLogger(TestBase.class.getName());
 	//WEBDRIVER CONFIGURATIONS  
-	@BeforeMethod(alwaysRun = true)
+    @BeforeMethod(alwaysRun = true)
 	public void setup() throws Exception{
 		
 		DOMConfigurator.configure("log4j.xml");

@@ -1,7 +1,7 @@
 #ENVIRONMENT VARIABLE CONFIG FILE
 browser=chrome   
 
-ChromeDriver=D:\\MobileAppTesting\\script\\TestLab\\driver\\chromedriver.exe
+ChromeDriver=C:\\Users\\kanha\\git\\TestLabPro\\TestLabPro\\drivers\\chromedriver.exe
 
 IEDriver=D:\\MobileAppTesting\\script\\TestLab\\driver\\IEDriverServer.exe
 
