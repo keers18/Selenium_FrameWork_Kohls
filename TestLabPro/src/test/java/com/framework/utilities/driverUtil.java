@@ -5,6 +5,7 @@ import org.openqa.selenium.OutputType;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -12,6 +13,7 @@ import com.framework.pageFactory.TestBase;
 
 public class driverUtil extends TestBase{
 	//CONTAINS DRIVER RELATED FUNCTIONALITIES.  .
+    private static Actions act=new Actions(driver);
 	public static void trigger() throws Exception{
 		try{
 		driver.manage().deleteAllCookies();
@@ -97,6 +99,15 @@ public class driverUtil extends TestBase{
              						e.printStackTrace();
              }
      }
+	 public static void moveToElement(By locator) throws Exception{
+		try{
+		act.moveToElement(driver.findElement(locator)).build().perform();	
+		Log.info("moved to element:"+locator.toString());	
+		}catch(Exception e){
+		 e.printStackTrace();
+		 Log.error("move to element:"+locator.toString()+" failed", e); 
+		}
+	 }
 	
 
 }

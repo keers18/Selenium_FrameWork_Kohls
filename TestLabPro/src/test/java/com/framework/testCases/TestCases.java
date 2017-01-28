@@ -7,7 +7,7 @@ import com.framework.reusable.components;
 import com.framework.utilities.reporter;
 
 public class TestCases extends TestBase {
-//PRETEST CONFIGURATIONS
+//PRETEST DECLARATIONS
 components component=new components();
  
 
@@ -23,7 +23,7 @@ public void TC001_login_validation() throws Exception{
 @TC_NO("002")
 @Test(groups= {"Dev"})
 public void TC002_fassured_validation() throws Exception{
-	reporter.initReport("TC002", "Flipkart:F-assured Functionality","Shruti");
+	reporter.initReport("TC002", "Flipkart:F-assured Functionality");
 	component.openURL();
 	component.clickFAssured();
 	reporter.tearReport();
@@ -37,5 +37,6 @@ public void TC003_checkGiftCardFunctionality() throws Exception{
 	Thread.sleep(5000);
 }
 
+	
 //xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 }

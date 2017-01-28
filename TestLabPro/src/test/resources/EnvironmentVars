@@ -5,8 +5,10 @@ ChromeDriver=C:\\Users\\kanha\\git\\TestLabPro\\TestLabPro\\drivers\\chromedrive
 
 IEDriver=D:\\MobileAppTesting\\script\\TestLab\\driver\\IEDriverServer.exe
 
-url=http://www.flipkart.com
-
+#url=http://www.flipkart.com
+url=http://www.facebook.com
+uname=8895724992
+password=litmus777
 implicit_wait_time=30
 
 ReportPath=C:\\Users\\kanha\\git\\TestLabPro\\TestLabPro\\reports\\

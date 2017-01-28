@@ -18,6 +18,7 @@ public class TestBase {
 	public void setup() throws Exception{
 		
 		DOMConfigurator.configure("log4j.xml");
+		
 		String browser=tcdf.globalValue("browser").trim();
 		Log.info("Test execution started");
 		Log.info(browser+ "browser selected");
@@ -46,7 +47,7 @@ public class TestBase {
 	@AfterMethod(alwaysRun = true)
 	public void teardown() throws Exception{
 		Log.info("killing current driver session");
-		Thread.sleep(5000);
+		Thread.sleep(500000);
 		driver.close();}
 
 }

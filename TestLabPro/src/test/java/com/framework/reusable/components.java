@@ -17,6 +17,10 @@ import com.framework.pageFactory.TestBase;
 		Thread.sleep(6000);
 			
 	}
+	public void fbLogin() throws Exception{
+		
+		oHome.fbLogin();
+	}
 	
 	public void clickFAssured() throws Exception{
 		oHome.clickFAssured();
