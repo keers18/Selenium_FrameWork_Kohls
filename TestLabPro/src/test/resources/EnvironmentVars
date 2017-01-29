@@ -14,3 +14,4 @@ implicit_wait_time=30
 ReportPath=C:\\Users\\kanha\\git\\TestLabPro\\TestLabPro\\reports\\
 
 ScreenShots=D:\\MobileAppTesting\\script\\TestLabPro\\screenshots\\
+XLFilepath=C:\\Users\\kanha\\git\\TestLabPro\\TestLabPro\\src\\test\\resources\\

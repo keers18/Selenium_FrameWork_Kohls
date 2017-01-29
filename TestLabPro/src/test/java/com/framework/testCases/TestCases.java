@@ -5,6 +5,7 @@ import com.framework.annotations.annotationFactory.TC_NO;
 import com.framework.pageFactory.TestBase;
 import com.framework.reusable.components;
 import com.framework.utilities.reporter;
+import com.framework.utilities.tcdf;
 
 public class TestCases extends TestBase {
 //PRETEST DECLARATIONS
@@ -24,6 +25,7 @@ public void TC001_login_validation() throws Exception{
 @Test(groups= {"Dev"})
 public void TC002_fassured_validation() throws Exception{
 	reporter.initReport("TC002", "Flipkart:F-assured Functionality");
+	System.out.println(tcdf.getExcelValue(0,0));
 	component.openURL();
 	component.clickFAssured();
 	reporter.tearReport();
