@@ -1,7 +1,5 @@
 package com.framework.reusable;
-
 import org.openqa.selenium.support.PageFactory;
-
 import com.framework.pageFactory.Home;
 import com.framework.pageFactory.TestBase;
 

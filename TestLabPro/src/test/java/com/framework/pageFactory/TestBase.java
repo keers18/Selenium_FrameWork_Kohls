@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.safari.SafariDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import com.framework.utilities.tcdf;
@@ -16,9 +17,7 @@ public class TestBase {
 	//WEBDRIVER CONFIGURATIONS  
     @BeforeMethod(alwaysRun = true)
 	public void setup() throws Exception{
-		
 		DOMConfigurator.configure("log4j.xml");
-		
 		String browser=tcdf.globalValue("browser").trim();
 		Log.info("Test execution started");
 		Log.info(browser+ "browser selected");
@@ -37,6 +36,10 @@ public class TestBase {
 			driver.manage().window().maximize();}	
 	   else if(browser.equals("safari")){
 			//code for safari thread
+		   Log.info("starting Safari services");
+		   driver = new SafariDriver();
+		   Log.info("configuring browser capabilities");
+		  // driver.manage().window().maximize();
 		   }
 	 else {
 		System.out.println("Invalid browser type detected using phantom execution.");
