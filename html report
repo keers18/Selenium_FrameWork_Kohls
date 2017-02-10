@@ -1,0 +1,123 @@
+package marketplace;
+
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+
+
+
+public class Reports {
+	
+	static String strReportFile;
+	static String strTestCaseName;
+	
+	
+	public static void setReportFile(String strPath){
+		strReportFile = strPath;
+		
+	}
+	
+	public static void setTestCaseName(String strTCName){
+		strTestCaseName = strTCName;
+		
+	}
+
+	public static void  reportTestStep(String strTestStep, String strTestDescription, String strExpected, String strActual, String strResult, boolean screenShotRequired) {
+		if (!new File(strReportFile).exists()){
+			createReportHTML(strReportFile);
+			
+		}
+		
+		try {
+			BufferedWriter out = new BufferedWriter(new FileWriter(strReportFile,true));
+			out.append("<tr bgcolor = #99CCFF >" + "\n");
+	        out.append("<td width=" + "15%>" + "\n");
+	        out.append("<p align=" + "center><font face=" + "Verdana " + "size=" + "2" + "><b>"  + strTestStep + "</b></td>" + "\n");
+	        out.append("<td width=" + "15%>" + "\n"); 
+			out.append("<p align=" + "center><font face=" + "Verdana " + "size=" + "2" + "><b>"  + strTestDescription + "</b></td>" + "\n");
+	        out.append("<td width=" + "20%>");
+	        out.append("<p align=" + "center" + "><font face=" + "Verdana " + "size=" + "2" + "><b>" + strExpected +"</b></td>" + "\n");
+	        out.append("<td width=" + "20%>" + "\n");
+			out.append("<p align=" + "center" + "><font face=" + "Verdana " + "size=" + "2" + "><b>" + strActual +"</b></td>" + "\n");
+	        out.append("<td width=" + "10%>" + "\n");
+			if (strResult.equalsIgnoreCase("pass"))
+					out.append("<p align=" + "center" + "><font face=" + "Verdana " + "size=" + "2" + " color=" + "#008000"+ "><b>" + "PASS" + "</b></td>" + "\n");
+			else if  (strResult.equalsIgnoreCase("fail"))
+					out.append("<p align=" + "center" + "><font face=" + "Verdana " + "size=" + "2" + " color=" + "#FF0000"+"><b>" + "FAIL" +"</b></td>" + "\n");
+			else
+					out.append("<p align=" + "center" + "><font face=" + "Verdana " + "size=" + "2" + " color=" + "#FFFF00"+"><b>" + "WARNING" +"</b></td>" + "\n");	
+			
+	        out.append("<td width=10%" + ">" + "\n");
+			if (!screenShotRequired)
+							out.append("<p align=" + "center" + ">" + "<b><font face=" + "Verdana " + "size=" + "2" + " color=" + "#FF0000" + ">"+"No Screen Shot" +"</font></b>"+ "</td>" + "\n");
+			else
+							out.append("<p align=" + "center" + ">" + "<b><font face=" + "Verdana " + "size=" + "2" + " color=" + "#FF0000" + "><a  href='"+ "" +"'>"+"Refer Screenshot" +"</a></font></b>"+ "</td>" + "\n");
+			out.append("</tr>" + "\n");
+			
+			out.flush(); out.close();
+			
+		} catch (Exception e) {
+			
+			e.printStackTrace();
+		}
+		
+		
+		
+	}
+	
+	public static void createReportHTML(String strReportFile){
+		System.out.println("Createing new file " + strReportFile);
+		try {
+			FileWriter out = new FileWriter(strReportFile);
+			out.write("<html>"+ "\n" );
+			out.write("<head>"+ "\n" );
+			out.write("<meta http-equiv='Content-Language' content='en-us'/>"+ "\n" );
+			out.write("<meta http-equiv='Content-Type' content='text/html;' charset='windows-1252'/>"+ "\n" );
+			out.write("<title>OMS Automation Execution Results</title>"+ "\n" );
+			out.write("</head>"+ "\n" );
+			out.write("<body id='testBody'>"+ "\n" );
+			out.write("<blockquote>"+ "\n" );
+			out.write("<table border='1'  id='table1' width='90%' height='31' >"+ "\n" );
+			out.write("<tr bgcolor = '#99FFAA'>"+ "\n" );
+			out.write("<td>"+ "\n" );
+			out.write("<p align='center'><font color='#000000' size='5'  face='Times New Roman'>"+ " Execution Report for  "+ strTestCaseName + "</font> </p>"+ "\n" );
+			out.write("</td>"+ "\n" );
+			out.write("</tr>"+ "\n" );
+			out.write("<tr bgcolor = '#99FFAA'>"+ "\n" );
+			out.write("<td>"+ "\n" );
+			out.write("<p align='center'><font color='#000000' size='4' face='Verdana'>"+ " "+ "Test Scenario : "+  strTestCaseName +"</font> </p>"+ "\n" );
+			out.write("</td>"+ "\n" );
+			out.write("</tr>"+ "\n" );
+			out.write("</table>"+ "\n" );
+			out.write("<table border='1' id='table1' width='90%' style='word-wrap:break-word;table-layout: fixed;'>"+ "\n" );
+			out.write("<tr bgcolor='#99FFAA'>"+ "\n" );
+			out.write("<td width=" + "'15%'>"+ "\n" );
+			out.write("<p align=" + "'center'><b><font color ='#000000'  face=" + "'Arial Narrow' " + "size=" + "'2'" + "/>" + "BUSINESS FLOW</b></p></td>"+ "\n" );
+			out.write("<td width=" + "'15%'>"+ "\n" );
+			out.write("<p align=" + "'center'><b><font color = '#000000'  face=" + "'Arial Narrow' " + "size=" + "'2'" + "/>" + "TEST CASE DESCRIPTION</b></p></td>"+ "\n" );
+			out.write("<td width=" + "'20%'>"+ "\n" );
+			out.write("<p align=" + "'center'" + ">" + "<b><font color ='#000000'  face=" + "'Arial Narrow' " + "size=" + "'2'" + "/>" + "EXPECTED RESULT</b></p></td>"+ "\n" );
+			out.write("<td width=" + "'20%'>"+ "\n" );
+			out.write("<p align=" + "'center'" + ">" + "<b><font color = '#000000'  face=" + "'Arial Narrow' " + "size=" + "'2'" + "/>" + "ACTUAL RESULT</b></p></td>"+ "\n" );
+			out.write("<td width=" + "'10%'>"+ "\n" );
+			out.write("<p align=" + "'center'" + ">" + "<b><font color = '#000000'  face=" + "'Arial Narrow' " + "size=" + "'2'" + "/>" + "STATUS</b></p></td>"+ "\n" );
+			out.write("<td width=" + "'10%'>"+ "\n" );
+			out.write("<p align=" + "'center'" + ">" + "<b><font color = '#000000'  face=" + "'Arial Narrow' " + "size=" + "'2'" + "/>" + "SCREENSHOT REFERENCE</b></p></td>"+ "\n" );
+			out.write("</tr>"+ "\n" );
+			out.write("</blockquote>"+ "\n" );
+			out.write("</body>"+ "\n" );
+			out.write("</html>"+ "\n" );
+			out.flush();
+			out.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		
+		
+	}
+	
+		
+	
+
+}
